@@ -1,0 +1,92 @@
+.bg-loader{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(225deg, $red 0%, $red-dark 100%);
+  overflow: hidden;
+
+  svg{
+    max-width: 144px;
+  }
+}
+
+.container{
+  max-width: 1440px;
+  height: calc(100vh - 70px);
+  margin: 0 auto;
+  padding: 36px 16px;
+  display: flex;
+  align-items: center;
+
+  @include responsive(){
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+.container-item-1{
+  max-width: 576px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container-item-2{
+  position: relative;
+}
+
+.flex{
+  display: flex;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.w-auto{
+  width: auto;
+}
+
+.spiderman{
+  width: 135%;
+  margin-top: 80px;
+  transform: translate3d(-160px, 0, 0);
+  position: relative;
+  
+  @include responsive(){
+    width: 100%;
+    transform: none;
+  }
+}
+
+.bg-video{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: linear-gradient(101.47deg, #0A0C10 26.38%, rgba(10, 12, 16, 0.8) 50.07%, #0A0C10 73.17%);
+  }
+}
