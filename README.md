@@ -11,7 +11,7 @@ This project was developed as part of the FrontPush course, aimed at enhancing d
 
 ## Project Preview
 
-![Preview](https://github.com/RhuanLucass/nubank-project/blob/main/img/miles-gif.gif)
+![Preview](https://github.com/RhuanLucass/spider-man-miles/blob/main/img/miles-gif.gif)
 
 ## Technologies Used
 
